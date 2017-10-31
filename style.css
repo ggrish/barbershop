@@ -10,6 +10,11 @@ body {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   text-transform: uppercase;
 }
+/*внутренние страницы*/
+.inner-page {
+  color: #000000;
+  background: #f8f3f0 url("./img/pattern-white.jpg") repeat;
+}
 
 .main-header-layout {
   display: flex;
@@ -40,6 +45,42 @@ body {
 
 .main-navigation a:hover {
   background: #242424;
+}
+/*внутренние страницы*/
+.main-navigation .active {
+  position: relative;
+  background: none;
+}
+/*внутренние страницы*/
+.main-navigation .active a:hover {
+  background: none;
+  cursor: default;
+}
+/*внутренние страницы*/
+.main-navigation .active::after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  left: 20px;
+  height: 5px;
+  background: #ffffff;
+}
+/*внутренние страницы*/
+.main-navigation .logo-inner {
+  float: left;
+  width: 111px;
+  height: 20px;
+  padding-top: 22px;
+}
+/*внутренние страницы*/
+.main-navigation .logo-inner img {
+  width: 111px;
+  height: 24px;
+}
+/*внутренние страницы*/
+.main-navigation .logo-inner:hover {
+  background: none;
 }
 
 .main-navigation ul {
@@ -258,11 +299,198 @@ body {
   border: 2px solid #663d15;
 }
 
+/*внутренние страницы*/
+
+.inner-page-title {
+  margin-bottom: 55px;
+}
+
+.inner-page-title h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 55px;
+  padding: 0;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs li {
+  position: relative;
+  display: inline;
+  padding-right: 40px;
+}
+
+.breadcrumbs li::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: 18px;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
+.breadcrumbs .current::after {
+  display: none;
+}
+
+.breadcrumbs a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs .current {
+  color: #aba9a7;
+}
+
+/*Общие стили для контентных тегов*/
+
+.inner-content {
+  margin-bottom: 75px;
+}
+
+.inner-content h2 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.inner-content h3 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.inner-content p {
+  margin: 14px 0;
+}
+
+.inner-content table {
+  border-collapse: collapse;
+}
+
+.inner-content td {
+  padding: 10px 15px;
+  border: 2px solid #000000;
+}
+
+.inner-content .big-heading-flex {
+  display: flex;
+  align-items: center;
+  margin-top: 55px;
+  margin-bottom: 65px;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.inner-content .big-heading-flex::before,
+.inner-content .big-heading-flex::after {
+  content: '';
+  flex-grow: 1;
+  width: 50px;
+  height: 2px;
+  background: black;
+}
+
+.inner-content .big-heading-flex::before {
+  margin-right: 25px;
+}
+
+.inner-content .big-heading-flex::after {
+  margin-left: 25px;
+}
+
+.big-heading-flex h2 {
+  margin-top: 35px;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.custom-list-1 {
+  margin: 14px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.custom-list-1 li {
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.custom-list-1 li::before {
+  content: "";
+position: absolute;
+top: 8px;
+left: 0;
+width: 8px;
+height: 8px;
+background-color: #000000;
+transform: rotate(45deg);
+}
+
+.prices-table {
+  width: 100%;
+}
+
+.prices-table td {
+  width: 50%;
+}
+
+.prices-table td:last-child {
+  text-align: center;
+}
+
+.inner-columns {
+  margin: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: -12px;
+}
+
+.inner-column-left,
+.inner-column-right {
+  width: 460px;
+}
+
+.inner-column-left *:first-child,
+.inner-column-right *:first-child {
+  margin-top: 0;
+}
+
+.inner-column-left *:last-child,
+.inner-column-right *:last-child {
+  margin-bottom: 0;
+}
+
+/*.inner-column-left {
+  float: left;
+}
+
+.inner-column-right {
+  float: right;
+}*/
+
 .main-footer {
   margin-top: 65px;
-  padding-top: 15px;
-  padding-bottom: 10px;
+  padding-top: 45px;
+  padding-bottom: 30px;
   background: url("./img/footer-bg.jpg");
+  color: white;
 }
 
 .main-footer-layout {
@@ -339,4 +567,183 @@ body {
 
 .social-btn-inst:hover {
   background-position: -79px -42px;
+}
+
+.footer-contacts a {
+  color: white;
+}
+
+/*всплывающая форма*/
+
+.modal-content {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  width: 300px;
+  margin-left: -230px;
+  padding: 50px 80px;
+  color: #000000;
+  background: #f8f3f0 url("./img/pattern-white.jpg");
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-content-close {
+  position: absolute;
+  top: 0;
+  right: -34px;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+}
+
+/*modal-close*/
+
+.modal-content-close::before,
+.modal-content-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 19px;
+  height: 3px;
+  background-color: #d0d0d0;
+  border-radius: 1px;
+}
+
+.modal-content-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-content h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.modal-content p {
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.modal-content .login-form {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 241px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0px 15px;
+  padding-right: 40px;
+
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 42px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  border: 2px solid #000000;
+  background-color: #f9f6f3;
+}
+
+.login-form input:focus {
+  border-color: #663d15;
+}
+
+.login-form input.icon-user {
+  background-image: url("./img/login-pic.png");
+  background-repeat: no-repeat;
+  background-position: 267px 12px;
+}
+
+.login-form input.icon-password {
+  background-image: url("./img/password-pic.png");
+  background-repeat: no-repeat;
+  background-position: 267px 12px;
+}
+
+.login-form .restore {
+  float: right;
+  color: #000000;
+}
+
+.modal-content .btn {
+  margin-top: 20px;
+  width: 300px;
+}
+
+.login-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.login-checkbox {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+
+.login-checkbox:hover {
+  color: #553d15;
+}
+
+.login-checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #000000;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 1px;
+  width: 15px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+  transform: rotate(45deg);
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  transform: rotate(-45deg);
+}
+
+.modal-content-map {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 766px;
+  height: 561px;
+  margin-top: -280px;
+  margin-left: -390px;
+  background: #e9e5dc url("./img/map-2.png");
+  border: 7px solid white;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  z-index: 20;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }
