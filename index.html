@@ -81,7 +81,7 @@
       </div>
     </div>
     <div class="index-content">
-      <div class="index-content-left">
+      <div class="index-content-left showmap">
         <h2 class="index-content-title">Контактная информация</h2>
         <p>
           Барбершоп "Бородинский" <br>
@@ -93,7 +93,7 @@
           пн - пт: с 10:00 до 22:00 <br>
           сб - вс: с 10:00 до 19:00
         </p>
-        <a class="btn" href="#">Как проехать</a>
+        <a class="btn js-open-map" href="#">Как проехать</a>
         <a class="btn" href="#">Обратная связь</a>
       </div>
       <div class="index-content-right">
@@ -117,7 +117,7 @@
       <section class="footer-contacts">
         Барбершоп "Бородинский" <br>
         Адрес: г. Самара, Масленникова, д. 16 <br>
-        <a href="#">Как нас найти?</a> <br>
+        <a class="js-open-map" href="#">Как нас найти?</a> <br>
         Телефон: +7 (846) 666-01-10
       </section>
       <section class="footer-social">
@@ -147,11 +147,13 @@
         <a class="restore" href="#">Я забыл пароль!</a>
         <button type="submit" class="btn">Войти</button>
       </form>
+      <div class="modal-overlay"></div>
   </div>
-  <!div class="modal-content-map">
-    <!button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-    <!div id="yandex-map"></div>
+  <div class="modal-content-map">
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2009.268326814395!2d50.155673188916126!3d53.21002704227757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41661e93d966a6b7%3A0xf46bead96da939ca!2z0L_RgC4g0JzQsNGB0LvQtdC90L3QuNC60L7QstCwLCAxNiwg0KHQsNC80LDRgNCwLCDQodCw0LzQsNGA0YHQutCw0Y8g0L7QsdC7LiwgNDQzMDU2!5e0!3m2!1sru!2sru!4v1509648973052" width="766" height="561" frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
-  <!div class="modal-overlay"></div>
+  <div class="modal-overlay" id="modal-overlay"></div>
+  <script src="popup.js"></script>
 </body>
 </html>
