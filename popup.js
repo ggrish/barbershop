@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-
-  var link = document.querySelector(".login");
+ var link = document.querySelector(".login");
   var popup = document.querySelector(".modal-content");
   var form = popup.querySelector("form");
   var close = document.querySelector(".modal-content-close");
@@ -132,4 +130,3 @@
       }
     }
   });
->>>>>>> 640a42ba9b99851f7c855edc3b6fddc1db3b3d6b
