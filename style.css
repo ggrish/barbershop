@@ -776,3 +776,37 @@ transform: rotate(45deg);
 .modal-error {
   animation: shake 0.6s;
 }
+
+.inner-coming {
+text-align: center;
+margin-top: 90px;
+margin-bottom: 90px;
+box-sizing: border-box;
+}
+
+.inner-coming h1 {
+  font-size: 55px;
+  line-height: 55px;
+  margin-bottom: -15px;
+}
+
+.inner-coming a {
+  margin-bottom: -15px;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.inner-coming a:hover,
+.inner-coming a:active {
+  color: #553d15;
+}
+
+.inner-coming p {
+  margin-bottom: -15px;
+  text-transform: uppercase;
+}
