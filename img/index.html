@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
+  <title>Барбершоп "Бородинский"</title>
+</head>
+<body>
+  <header class="main-header">
+    <div class="container main-header-layout">
+      <nav class="main-navigation">
+        <ul>
+          <li>
+            <a href="coming-soon.html">Информация</a>
+          </li>
+          <li>
+            <a href="coming-soon.html">Новости</a>
+          </li>
+          <li>
+            <a href="prices.html">Прайс-лист</a>
+          </li>
+          <li>
+            <a href="coming-soon.html">Магазин</a>
+          </li>
+          <li>
+            <a href="coming-soon.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-block">
+        <a class="login" href="#">Вход</a>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <div class="index-logo">
+      <img src="img/index-logo.png" width="368" height="204" alt="Барбершоп Бородинский">
+    </div>
+    <section class="features">
+      <div class="features-item">
+        <b class="features-name">Быстро</b>
+        <img src="img/romb-index.png">
+        <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!</p>
+      </div>
+      <div class="features-item">
+        <b class="features-name">Круто</b>
+        <img src="img/romb-index.png">
+        <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+      </div>
+      <div class="features-item">
+        <b class="features-name">Дорого</b>
+        <img src="img/romb-index.png">
+        <p>Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
+      </div>
+    </section>
+    <div class="index-content">
+      <div class="index-content-left">
+        <h2 class="index-content-title">Новости</h2>
+        <ul class="news-preview">
+          <li>
+            <p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+            <time datetime="2017-10-10">10 октября</time>
+          </li>
+          <li>
+            <p>В нашей команде пополнение, Борис "Бритва" Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+            <time datetime="2017-10-15">15 октября</time>
+          </li>
+        </ul>
+        <a class="btn" href="coming-soon.html">Все новости</a>
+      </div>
+      <div class="index-content-right">
+        <h2 class="index-content-title">Фотогалерея</h2>
+        <div class="gallery">
+          <figure class="gallery-content">
+            <img src="img/photo-1.jpg" width="286" height="164 "alt="">
+          </figure>
+          <button class="btn gallery-prev" type="button" disabled>Назад</button>
+          <button class="btn gallery-next" type="button">Вперед</button>
+        </div>
+      </div>
+    </div>
+    <div class="index-content">
+      <div class="index-content-left showmap">
+        <h2 class="index-content-title">Контактная информация</h2>
+        <p>
+          Барбершоп "Бородинский" <br>
+          Адрес: г. Самара, Масленникова, д. 16 <br>
+          Телефон: +7 (846) 666-01-10
+        </p>
+        <p>
+          Время работы: <br>
+          пн - пт: с 10:00 до 22:00 <br>
+          сб - вс: с 10:00 до 19:00
+        </p>
+        <a class="btn js-open-map">Как проехать</a>
+        <a class="btn" href="coming-soon.html">Обратная связь</a>
+      </div>
+      <div class="index-content-right">
+        <h2 class="index-content-title">Записаться</h2>
+        <p>
+          Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони <br>
+        </p>
+        <form class="appointment-form" action="index.html" method="post">
+          <input type="text" name="date" value="" placeholder="Дата">
+          <input type="text" name="time" value="" placeholder="Время">
+          <input type="text" name="name" value="" placeholder="Ваше имя">
+          <input type="text" name="phone" value="" placeholder="Телефон">
+          <a class="btn" href="#" type="submit">Отправить</a>
+        </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="main-footer">
+    <div class="container main-footer-layout">
+      <section class="footer-contacts">
+        Барбершоп "Бородинский" <br>
+        Адрес: г. Самара, Масленникова, д. 16 <br>
+        <a class="js-open-map" href="#">Как нас найти?</a> <br>
+        Телефон: +7 (846) 666-01-10
+      </section>
+      <section class="footer-social">
+        <p>Давайте дружить!</p>
+        <a class="social-btn social-btn-vk"href="https://www.vk.com">Вконтакте</a>
+        <a class="social-btn social-btn-fb"href="https://www.facebook.com">Фейсбук</a>
+        <a class="social-btn social-btn-inst"href="https://www.instagram.com">Инстаграм</a>
+      </section>
+      <section class="footer-copyright">
+        <p>Разработано:</p>
+        <a class="btn" href="https://github.com/ggrish">ggrish</a>
+      </section>
+    </div>
+  </footer>
+  <div class="modal-content">
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <h2 class="modal-content-title">Личный кабинет</h2>
+      <p>Введите свой логин и пароль</p>
+      <form class="login-form" action="index.html" method="post">
+        <input class="icon-user" type="text" name="login" placeholder="Логин">
+        <input class="icon-password" type="password" name="password" placeholder="Пароль">
+        <label class="login-checkbox">
+        <input type="checkbox" name="remember">
+        <span class="checkbox-indicator"></span>
+        Запомните меня
+        </label>
+        <a class="restore" href="#">Я забыл пароль!</a>
+        <button type="submit" class="btn">Войти</button>
+      </form>
+      <div class="modal-overlay"></div>
+  </div>
+  <div class="modal-content-map">
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2009.268326814395!2d50.155673188916126!3d53.21002704227757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41661e93d966a6b7%3A0xf46bead96da939ca!2z0L_RgC4g0JzQsNGB0LvQtdC90L3QuNC60L7QstCwLCAxNiwg0KHQsNC80LDRgNCwLCDQodCw0LzQsNGA0YHQutCw0Y8g0L7QsdC7LiwgNDQzMDU2!5e0!3m2!1sru!2sru!4v1509648973052" width="766" height="561" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+  <div class="modal-overlay" id="modal-overlay"></div>
+  <!script src="map.js"><!/script>
+  <script src="popup.js"></script>
+</body>
+</html>
