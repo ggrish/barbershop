@@ -5,10 +5,11 @@
   var login = popup.querySelector("[name=login]");
   var password = popup.querySelector("[name=password]");
   var storage = localStorage.getItem("login");
+  var Overlay = document.querySelector(".modal-overlay");
   var mapOpen = document.querySelector(".js-open-map");
   var mapPopup = document.querySelector(".modal-content-map");
-  var mapClose = document.querySelector(".modal-content-close");
   var Overlay = document.querySelector(".modal-overlay");
+  var mapClose = mapPopup.querySelector(".modal-content-close");
 
   mapOpen.addEventListener("click", function(event) {
     event.preventDefault();
@@ -18,6 +19,7 @@
   mapClose.addEventListener("click", function(event) {
     event.preventDefault();
     mapPopup.classList.remove("modal-content-show");
+    document.getElementById("modal-overlay").style.display = "none";
     });
     window.addEventListener("keydown", function (event) {
       if (event.keyCode === 27) {
